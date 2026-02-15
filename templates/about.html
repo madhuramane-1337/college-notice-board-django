@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us {% endblock %}
+
+{% block content %}
+<div class="about-page">
+
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h2>About Us</h2>
+        <p class="text-muted">Learn more about Vidya Pratishthan Kamalnayan Bajaj Institute of Engineering and Technology</p>
+    </div>
+
+    <!-- College Introduction -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <img src="{% static 'notice/images/image_004.png' %}" alt="College Campus" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6">
+            <h4>Welcome to Our College</h4>
+            <p>
+                Vidya Pratishthan Kamalnayan Bajaj Institute of Engineering and Technology, Baramati, is an
+                autonomous institute approved by AICTE and affiliated to SPPU, Pune. We are committed to providing
+                quality technical education, promoting research, and shaping our students into responsible,
+                skilled professionals.
+            </p>
+        </div>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="row mb-5">
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5>Our Mission</h5>
+                    <p>
+                        To empower students with technical knowledge and practical skills to excel in the
+                        engineering industry and contribute positively to society.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5>Our Vision</h5>
+                    <p>
+                        To become a center of excellence in engineering education, fostering innovation,
+                        research, and holistic development of students.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements / Highlights -->
+    <div class="mb-5">
+        <h4 class="mb-3">Highlights</h4>
+        <ul class="list-group list-group-flush shadow-sm rounded">
+            <li class="list-group-item">Autonomous status recognized by AICTE.</li>
+            <li class="list-group-item">State-of-the-art laboratories and modern campus facilities.</li>
+            <li class="list-group-item">Regular seminars, workshops, and technical events.</li>
+            <li class="list-group-item">Strong alumni network and industry collaborations.</li>
+        </ul>
+    </div>
+
+</div>
+{% endblock %}

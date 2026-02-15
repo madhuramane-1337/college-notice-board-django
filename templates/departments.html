@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Departments {% endblock %}
+
+{% block content %}
+<div class="departments-page">
+
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h2>Our Departments</h2>
+        <p class="text-muted">Explore the diverse engineering departments at Vidya Pratishthan Kamalnayan Bajaj Institute of Engineering and Technology</p>
+    </div>
+
+    <!-- Departments Cards -->
+    <div class="row g-4">
+
+        <!-- Computer Engineering -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'notice/images/image_006.png' %}" class="card-img-top" alt="Computer Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Engineering</h5>
+                    <p class="card-text">
+                        Focused on software development, artificial intelligence, machine learning, and cutting-edge computing technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mechanical Engineering -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'notice/images/image_005.png' %}" class="card-img-top" alt="Mechanical Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Mechanical Engineering</h5>
+                    <p class="card-text">
+                        Specializes in design, manufacturing, and mechanical systems with a focus on innovation and industry readiness.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Civil Engineering -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'notice/images/image_007.png' %}" class="card-img-top" alt="Civil Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Civil Engineering</h5>
+                    <p class="card-text">
+                        Focused on infrastructure development, structural design, and sustainable construction practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electronics & Telecommunication -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'notice/images/image_008.png' %}" class="card-img-top" alt="Electronics Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Electronics & Telecommunication</h5>
+                    <p class="card-text">
+                        Covers communication systems, embedded systems, and electronic circuit design for modern applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electrical Engineering -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'notice/images/image_010.png' %}" class="card-img-top" alt="Electrical Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Electrical Engineering</h5>
+                    <p class="card-text">
+                        Focused on power systems, energy management, and control systems with practical lab exposure.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Information Technology -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'notice/images/image_009.png' %}" class="card-img-top" alt="Information Technology">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text">
+                        Covers networking, database management, web technologies, and software engineering practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

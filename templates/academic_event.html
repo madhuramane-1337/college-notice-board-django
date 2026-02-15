@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Academic Events {% endblock %}
+
+{% block content %}
+<div class="events-page">
+
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h2>Academic Events</h2>
+        <p class="text-muted">Stay updated with workshops, seminars, and other events organized by the institute.</p>
+    </div>
+
+    <!-- Upcoming Events Cards -->
+    <div class="row g-4">
+
+        <!-- Event 1 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Annual Tech Fest</h5>
+                    <small class="text-muted">Date: 12th March 2026</small>
+                    <p class="card-text mt-2">
+                        Our annual technical festival showcasing innovative projects, competitions, and workshops across all departments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Guest Lecture on Artificial Intelligence</h5>
+                    <small class="text-muted">Date: 25th March 2026</small>
+                    <p class="card-text mt-2">
+                        A lecture by an industry expert on the future of AI, machine learning, and its applications in engineering.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Workshop on Robotics</h5>
+                    <small class="text-muted">Date: 10th April 2026</small>
+                    <p class="card-text mt-2">
+                        Hands-on workshop on designing and programming robots, open for students from all technical departments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Coding Hackathon</h5>
+                    <small class="text-muted">Date: 20th April 2026</small>
+                    <p class="card-text mt-2">
+                        A 24-hour coding challenge where students compete to solve real-world technical problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Past Events Section -->
+    <div class="mt-5">
+        <h4 class="mb-3">Past Events</h4>
+        <ul class="list-group list-group-flush shadow-sm rounded">
+            <li class="list-group-item">Seminar on Renewable Energy - 5th January 2026</li>
+            <li class="list-group-item">Workshop on IoT & Embedded Systems - 15th February 2026</li>
+            <li class="list-group-item">Alumni Meet - 28th February 2026</li>
+        </ul>
+    </div>
+
+</div>
+{% endblock %}

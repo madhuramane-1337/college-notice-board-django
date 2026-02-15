@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact | College Notice Board{% endblock %}
+
+{% block content %}
+<div class="contact-page">
+
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h2>Contact Us</h2>
+        <p class="text-muted">Reach out to us for inquiries, feedback, or suggestions</p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Contact Information -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="mb-3">College Address</h5>
+                    <p>Vidya Pratishthan Kamalnayan Bajaj Institute of Engineering and Technology,<br>
+                        Baramati, Maharashtra, India</p>
+
+                    <h5 class="mb-3 mt-4">Phone</h5>
+                    <p>+91-1234567890</p>
+
+                    <h5 class="mb-3 mt-4">Email</h5>
+                    <p>info@kpbijet.ac.in</p>
+
+                    <h5 class="mb-3 mt-4">Office Hours</h5>
+                    <p>Monday to Saturday: 9:00 AM – 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="mb-4">Send a Message</h5>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional Map Section -->
+    <div class="mt-5">
+        <h5 class="mb-3">Our Location</h5>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.0000000000005!2d74.59000000000002!3d18.150000000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVidya%20Pratishthan%20Kamalnayan%20Bajaj%20Institute!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+</div>
+{% endblock %}

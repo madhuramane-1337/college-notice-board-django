@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'notice/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding-top: 130px;   /* space for fixed header */
+            padding-bottom: 60px; /* space for fixed footer */
+            background-color: #f4f6f9;
+        }
+
+        /* Fixed Header Wrapper */
+        .header-wrapper {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #0b3d5c;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .top-bar img {
+            width: 60px;
+            margin-right: 15px;
+        }
+
+        .top-bar h6 {
+            margin: 0;
+        }
+
+        .top-bar small {
+            color: #f1f1f1;
+        }
+
+        /* Navbar */
+        .navbar-custom {
+            background-color: #082c44;
+        }
+
+        .navbar-custom .nav-link,
+        .navbar-custom .navbar-brand {
+            color: white;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: orange !important;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0b3d5c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Dashboard Main Content */
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-header h4 {
+            margin: 0;
+        }
+
+        .notice-card {
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .notice-card h6 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .notice-card small {
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header Start -->
+<div class="header-wrapper">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex align-items-center">
+            <img src="{% static 'notice/images/image_001.png' %}" alt="Logo">
+            <div>
+                <h6>Vidya Pratishthan Kamalnayan Bajaj Institute of Engineering and Technology, Baramati</h6>
+                <small>Autonomous | Approved by AICTE | Affiliated to SPPU, Pune</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Student Dashboard</a>
+
+            <button class="navbar-toggler bg-light" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+<!-- Header End -->
+
+<!-- Main Body Start -->
+<div class="container mt-4">
+
+
+    {% for notice in notices %}
+    <div class="card notice-card shadow-sm">
+        <div class="card-body">
+            <h6>{{ notice.title }}</h6>
+            <p>{{ notice.description }}</p>
+            <small>{{ notice.date_posted }}</small>
+        </div>
+    </div>
+    {% empty %}
+    <p>No notices yet.</p>
+    {% endfor %}
+
+</div>
+<!-- Main Body End -->
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 College Notice Board | Student Panel
+</div>
+
+<!-- Bootstrap JS -->
+<script src="{% static 'notice/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>
