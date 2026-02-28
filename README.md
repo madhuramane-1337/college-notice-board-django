@@ -115,7 +115,31 @@ http://127.0.0.1:8000/
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+### 🏠 Home Page
+<p align="center">
+  <img src="screenshots/home.png" width="800">
+</p>
+
+---
+
+### 🔐 Admin Login Page
+<p align="center">
+  <img src="screenshots/admin_login.png" width="800">
+</p>
+
+---
+
+### 📊 Admin Dashboard
+<p align="center">
+  <img src="screenshots/admin_dashboard.png" width="800">
+</p>
+
+---
+
+### ➕ Add Notice Page
+<p align="center">
+  <img src="screenshots/add_notice.png" width="800">
+</p>
 
 ---
 
