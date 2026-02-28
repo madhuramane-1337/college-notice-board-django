@@ -138,7 +138,7 @@ http://127.0.0.1:8000/
 
 ### ➕ Add Notice Page
 <p align="center">
-  <img src="screenshots/add_notice.png" width="800">
+  <img src="screenshots/add_notices.png" width="800">
 </p>
 
 ---
